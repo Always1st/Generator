@@ -1,0 +1,23 @@
+Article:
+   fields:
+    title: varchar(50)
+    text: text
+
+Category:
+   fields:
+     title: varchar(50)
+
+
+
+Ninja:
+  fields:
+    weapon: weapon
+    weapon: weapon
+    weapon: weapon
+    name: varchar(100)
+    klikyha: varchar(50)
+
+
+SomeTable:
+  fields:
+   somefield: int
