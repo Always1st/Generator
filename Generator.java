@@ -44,6 +44,7 @@ public class Generator {
 		StringBuilder fields = new StringBuilder();
 		String temp = this.scanner.nextLine();  // "   Fields:"
 
+		// VVVVV NOTE: you have to modify this part ot the code VVVVVV
 		if (temp.contains("fields:") || temp.contains("Fields:") && this.calculateSpaces(temp) > 1) { // fields: initialization
 			fields.append(name + "_id INT AUTO_INCREMENT PRIMARY KEY"); // adding as default PKey
 			if (this.scanner.hasNext()) {
@@ -63,6 +64,7 @@ public class Generator {
 				throw new InvalidSyntaxException(); //  someField: varchar(50) or if no Fields: mentioned
 			}
 		}
+		// ^^^^^^^ NOTE: end of modification part ^^^^^^^
 		fields.append("\n);\n");
 		
 		return fields.toString();
